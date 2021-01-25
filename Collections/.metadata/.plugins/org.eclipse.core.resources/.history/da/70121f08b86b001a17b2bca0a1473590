@@ -1,0 +1,21 @@
+package br.com.treinaweb.java.collections;
+
+import java.util.Hashtable;
+
+import br.com.treinaweb.java.collections.models.Pessoa;
+
+public class MainHashtable {
+
+	public static void main(String[] args) {
+		Hashtable<String, Pessoa> tabelaPessoa = new Hashtable<String, Pessoa>();
+		tabelaPessoa.put("legal", new Pessoa(1, "TreinaWeb 1"));
+		System.out.println(tabelaPessoa);
+		tabelaPessoa.put("chato", new Pessoa(2, "TreinaWeb 2"));
+		System.out.println(tabelaPessoa);	
+		System.out.println(tabelaPessoa.get("legal"));
+		System.out.println(tabelaPessoa.put("legal", new Pessoa(3, "TreinaWeb 3")));
+		
+
+	}
+
+}

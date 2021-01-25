@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.classes.Moto"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.classes.Veiculo"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.classes.Carro"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.excecoes.ChassiInvalidoException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.excecoes.AbastecimentoVeiculoLigadoException"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.interfaces.VeiculoInterface"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.excecoes.FrenagemVeiculoDesligadoException"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.excecoes.AceleracaoVeiculoLigadoException"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.interfaces.Veiculo"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.interfaces.Ligador"/>
+    <fullyQualifiedTypeName name="br.com.treinaweb.javaoo.interfaces.Andador"/>
+</qualifiedTypeNameHistroy>

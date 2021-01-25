@@ -1,0 +1,5 @@
+package br.com.treinaweb.estruturadados.espalhamento;
+
+public class TabelaEspalhamento {
+
+}

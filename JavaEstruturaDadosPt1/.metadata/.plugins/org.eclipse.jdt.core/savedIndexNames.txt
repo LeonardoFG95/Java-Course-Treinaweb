@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\TreinaWeb\Java\JavaEstruturaDadosPt1\.metadata\.plugins\org.eclipse.jdt.core
+1941372344.index

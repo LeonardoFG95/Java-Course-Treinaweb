@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\TreinaWeb\Java\Collections\.metadata\.plugins\org.eclipse.jdt.core
+1671692264.index
+1172563161.index

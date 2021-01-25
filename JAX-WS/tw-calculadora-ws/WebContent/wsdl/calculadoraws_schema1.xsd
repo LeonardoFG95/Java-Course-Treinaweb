@@ -1,0 +1,23 @@
+<xs:schema xmlns:tns="http://ws.calculadora.treinaweb.com.br/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="unqualified"
+	targetNamespace="http://ws.calculadora.treinaweb.com.br/" version="1.0">
+
+	<xs:element name="somar" type="tns:somar" />
+
+	<xs:element name="somarResponse" type="tns:somarResponse" />
+
+	<xs:complexType name="somar">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="somarResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CalculadoraWSService"
+	targetNamespace="http://ws.calculadora.treinaweb.com.br/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ws.calculadora.treinaweb.com.br/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://ws.calculadora.treinaweb.com.br/"
+				schemaLocation="calculadoraws_schema1.xsd" />
+		</schema>
+	</wsdl:types>
+	<wsdl:message name="somar">
+		<wsdl:part name="parameters" element="tns:somar">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="somarResponse">
+		<wsdl:part name="parameters" element="tns:somarResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="CalculadoraWSEndpoint">
+		<wsdl:operation name="somar">
+			<wsdl:input name="somar" message="tns:somar">
+			</wsdl:input>
+			<wsdl:output name="somarResponse"
+				message="tns:somarResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CalculadoraWSServiceSoapBinding"
+		type="tns:CalculadoraWSEndpoint">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="somar">
+			<soap:operation soapAction="urn:Somar"
+				style="document" />
+			<wsdl:input name="somar">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="somarResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="CalculadoraWSService">
+		<wsdl:port name="CalculadoraWSPort"
+			binding="tns:CalculadoraWSServiceSoapBinding">
+			<soap:address
+				location="http://localhost:9090/CalculadoraWSPort" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+package br.com.treinaweb.javaoo.classes;
+
+import br.com.treinaweb.javaoo.interfaces.Andador;
+import br.com.treinaweb.javaoo.interfaces.Ligador;
+
+public class CarrinhoControleRemoto implements Ligador, Andador {
+
+}

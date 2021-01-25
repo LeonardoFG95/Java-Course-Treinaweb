@@ -1,0 +1,51 @@
+package br.com.treinaweb.java.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		List<Empregado> empregados = new ArrayList<Empregado>();
+		empregados.add(new Empregado(1, "João", 2000, "Produção"));
+		empregados.add(new Empregado(2, "Maria", 3000, "RH"));
+		empregados.add(new Empregado(3, "José", 5000, "Controladoria"));
+		empregados.add(new Empregado(4, "Josefina", 7000, "CTO"));
+		System.out.println(" ** LISTA DE EMPREGADOS ** ");
+		/*for (Empregado emp : empregados) {
+			System.out.println(emp.getNome());
+		}*/
+		empregados.stream().forEach(emp -> {
+			System.out.println(emp.getNome());
+		});
+		/*double salarioTotal = 0;
+		for (Empregado emp : empregados) {
+			salarioTogreal = salarioTotal + emp.getSalario();
+		}*/
+		double salarioTotal = empregados.stream().mapToDouble(emp -> emp.getSalario()).sum();
+		System.out.println("Salário Total: R$ " + salarioTotal);
+	
+		/*
+		 * Mensageiro mensageiro = new Mensageiro() {
+		 * 
+		 * @Override public void emitirMensagem(String mensagem) {
+		 * System.out.println("Mensagem do objeto anônimo: " + mensagem); } };
+		 */
+		Mensageiro mensageiro = (mensagem) -> System.out.println("Mensagem da expressão lambda " + mensagem);
+		mensageiro.emitirMensagem("TreinaWeb");
+		
+		//************************************************
+		
+		// Consumer
+		// Entra um parametro e não retorna nada!
+		System.out.println("Execução do consumer: ");
+		Consumer<Empregado> consumer = (emp) -> {
+			System.out.println(emp.getNome() + ", R$ " + emp.getSalario());
+		};
+		consumer.accept(new Empregado(10, "TreinaWeb", 1000, "Educação"));
+		
+		
+	}
+		
+}

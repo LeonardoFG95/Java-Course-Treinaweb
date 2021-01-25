@@ -1,0 +1,11 @@
+package br.com.treinaweb.javaoo.classes;
+
+public class Moto extends Veiculo {
+	
+	public Moto(String nome, String marca) {
+		this.quantidadeRodas = 2;
+		this.setNome(nome);
+		this.setMarca(marca);
+	}
+
+}

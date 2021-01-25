@@ -1,0 +1,14 @@
+package br.com.treinaweb.main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner
+		System.out.println("Hello World");
+		System.out.print("Hello World Again \r");	
+		System.out.print("Hello World One More Time");	
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;tabelaPessoas&apos; in &apos;br.com.treinaweb.java.collections.MainHashtable.main(...)&apos; to &apos;tabelaPessoa&apos;&#x0D;&#x0A;- Original project: &apos;tw-java-collections&apos;&#x0D;&#x0A;- Original element: &apos;br.com.treinaweb.java.collections.MainHashtable.main(String[]).tabelaPessoas&apos;&#x0D;&#x0A;- Renamed element: &apos;tabelaPessoas&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;tabelaPessoas&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;br.com.treinaweb.java.collections{MainHashtable.java[MainHashtable~main~\[QString;@tabelaPessoas!213!286!239!251!QHashtable\&lt;QString;QPessoa;&gt;;!0!false" name="tabelaPessoa" references="true" stamp="1584824653968" version="1.0"/>
+</session>
